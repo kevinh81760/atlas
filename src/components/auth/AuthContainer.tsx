@@ -4,13 +4,14 @@ import { GoogleAuthButton } from './GoogleAuthButton';
 import { Divider } from '@/components/ui/Divider';
 import { AuthTabs } from './AuthTabs';
 import { SignInForm } from './SignInForm';
+import { SignUpForm } from './SignUpForm';
 import { useAuthTabs } from '@/hooks/auth/useAuthTabs';
-import { AuthFormData } from '@/types/auth';
+import { AuthFormData, SignUpFormData } from '@/types/auth';
 
 export function AuthContainer() {
   const { activeTab, setActiveTab } = useAuthTabs('signin');
 
-  const handleFormSubmit = (data: AuthFormData) => {
+  const handleFormSubmit = (data: AuthFormData | SignUpFormData) => {
     console.log('Form submitted:', data);
     // TODO: Add API call when backend is ready
   };
@@ -44,7 +45,7 @@ export function AuthContainer() {
 
         {/* Form */}
         {activeTab === 'signin' && <SignInForm onSubmit={handleFormSubmit} />}
-        {/* TODO: Add SignUpForm when needed */}
+        {activeTab === 'signup' && <SignUpForm onSubmit={handleFormSubmit} />}
       </div>
     </div>
   );
