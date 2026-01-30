@@ -1,5 +1,4 @@
 import { ButtonProps } from '@/types/ui';
-import { cn } from '@/lib/utils';
 
 export function Button({ variant = 'secondary', children, onClick, type = 'button', className }: ButtonProps) {
   const baseStyles = 'flex items-center justify-center font-inter text-[16px] transition-colors';
@@ -14,11 +13,13 @@ export function Button({ variant = 'secondary', children, onClick, type = 'butto
     ? 'bg-[var(--bg-tertiary)] font-medium text-[var(--text-primary)]'
     : '';
 
+  const classNames = [baseStyles, variantStyles[variant], activeStyles, className].filter(Boolean).join(' ');
+
   return (
     <button
       type={type}
       onClick={onClick}
-      className={cn(baseStyles, variantStyles[variant], activeStyles, className)}
+      className={classNames}
     >
       {children}
     </button>
