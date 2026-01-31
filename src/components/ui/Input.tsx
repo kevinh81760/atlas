@@ -1,4 +1,4 @@
-import { InputProps } from '@/types/ui';
+import { InputProps } from './types';
 
 export function Input({ icon, className, ...props }: InputProps) {
   return (

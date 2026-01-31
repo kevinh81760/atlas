@@ -1,4 +1,4 @@
-import { DividerProps } from '@/types/ui';
+import { DividerProps } from './types';
 
 export function Divider({ text = 'OR CONTINUE WITH EMAIL', className }: DividerProps) {
   return (

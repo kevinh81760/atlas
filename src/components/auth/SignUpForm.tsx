@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/Input';
 import { Label } from '@/components/ui/Label';
 import { Button } from '@/components/ui/Button';
 import { useSignUpForm } from '@/hooks/auth/useSignUpForm';
-import { SignUpFormData } from '@/types/auth';
+import { SignUpFormData } from './types';
 
 interface SignUpFormProps {
   onSubmit?: (data: SignUpFormData) => void;

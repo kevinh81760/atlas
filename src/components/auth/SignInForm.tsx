@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/Input';
 import { Label } from '@/components/ui/Label';
 import { Button } from '@/components/ui/Button';
 import { useAuthForm } from '@/hooks/auth/useAuthForm';
-import { AuthFormData } from '@/types/auth';
+import { AuthFormData } from './types';
 
 interface SignInFormProps {
   onSubmit?: (data: AuthFormData) => void;

@@ -1,4 +1,4 @@
-import { ButtonProps } from '@/types/ui';
+import { ButtonProps } from './types';
 
 export function Button({ variant = 'secondary', children, onClick, type = 'button', className }: ButtonProps) {
   const baseStyles = 'flex items-center justify-center font-inter text-[16px] transition-colors';

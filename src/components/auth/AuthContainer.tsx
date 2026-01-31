@@ -6,7 +6,7 @@ import { AuthTabs } from './AuthTabs';
 import { SignInForm } from './SignInForm';
 import { SignUpForm } from './SignUpForm';
 import { useAuthTabs } from '@/hooks/auth/useAuthTabs';
-import { AuthFormData, SignUpFormData } from '@/types/auth';
+import { AuthFormData, SignUpFormData } from './types';
 
 export function AuthContainer() {
   const { activeTab, setActiveTab } = useAuthTabs('signin');

@@ -1,4 +1,4 @@
-import { LabelProps } from '@/types/ui';
+import { LabelProps } from './types';
 
 export function Label({ htmlFor, children, className }: LabelProps) {
   return (
