@@ -2,7 +2,7 @@ import { supabase } from "./supabaseClient";
 
 export const ensureProfile = async (fullName?: string) => {
     
-    // Finds out who is logged in
+    // Finds out who is logged ini
     const { data, error } = await supabase.auth.getUser();
     if (error) {
         throw error;
