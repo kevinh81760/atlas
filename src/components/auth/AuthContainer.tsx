@@ -7,14 +7,31 @@ import { SignInForm } from './SignInForm';
 import { SignUpForm } from './SignUpForm';
 import { useAuthTabs } from '@/hooks/auth/useAuthTabs';
 import { AuthFormData, SignUpFormData } from './types';
+import { supabase } from '@/lib/supabaseClient';
+import { useRouter } from "next/navigation";
 
 export function AuthContainer() {
   const { activeTab, setActiveTab } = useAuthTabs('signin');
+  const router = useRouter();
 
-  const handleFormSubmit = (data: AuthFormData | SignUpFormData) => {
-    console.log('Form submitted:', data);
-    // TODO: Add API call when backend is ready
+  const handleFormSubmit = async (
+    data: AuthFormData | SignUpFormData
+  ) => {  
+    const { data: signUpData, error: signUpError } =
+      await supabase.auth.signUp({
+        email: data.email,
+        password: data.password,
+      });
+  
+    if (signUpError) {
+      console.error(signUpError.message);
+      return;
+    }
+  
+    console.log("Signup success:", signUpData);
+    router.push('/dashboard');
   };
+  
 
   const handleGoogleAuth = () => {
     console.log('Google auth clicked');
