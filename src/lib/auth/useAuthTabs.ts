@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AuthTab } from '@/components/auth/types';
+import { AuthTab } from './types';
 
 export function useAuthTabs(initialTab: AuthTab = 'signin') {
   const [activeTab, setActiveTab] = useState<AuthTab>(initialTab);

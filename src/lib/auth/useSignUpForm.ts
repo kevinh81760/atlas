@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SignUpFormData, SignUpFormErrors } from '@/components/auth/types';
+import { SignUpFormData, SignUpFormErrors } from './types';
 
 export function useSignUpForm(onSubmit?: (data: SignUpFormData) => void) {
   const [values, setValues] = useState<SignUpFormData>({

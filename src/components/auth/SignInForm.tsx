@@ -4,8 +4,8 @@ import { Mail, Lock } from 'lucide-react';
 import { Input } from '@/components/ui/Input';
 import { Label } from '@/components/ui/Label';
 import { Button } from '@/components/ui/Button';
-import { useAuthForm } from '@/hooks/auth/useAuthForm';
-import { AuthFormData } from './types';
+import { useAuthForm } from '@/lib/auth/useAuthForm';
+import { AuthFormData } from '@/lib/auth/types';
 
 interface SignInFormProps {
   onSubmit?: (data: AuthFormData) => void;

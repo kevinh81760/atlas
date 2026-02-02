@@ -5,8 +5,8 @@ import { Divider } from '@/components/ui/Divider';
 import { AuthTabs } from './AuthTabs';
 import { SignInForm } from './SignInForm';
 import { SignUpForm } from './SignUpForm';
-import { useAuthTabs } from '@/hooks/auth/useAuthTabs';
-import { AuthFormData, SignUpFormData } from './types';
+import { useAuthTabs } from '@/lib/auth/useAuthTabs';
+import { AuthFormData, SignUpFormData } from '@/lib/auth/types';
 import { supabase } from '@/lib/supabaseClient';
 import { useRouter } from "next/navigation";
 

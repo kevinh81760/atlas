@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/.claude": true,
+    "**/.git": true,
+    "**/out": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.cache": true,
+    "**/.parcel-cache": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  }
+}

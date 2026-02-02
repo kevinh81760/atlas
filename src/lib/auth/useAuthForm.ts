@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AuthFormData, AuthFormErrors } from '@/components/auth/types';
+import { AuthFormData, AuthFormErrors } from './types';
 
 export function useAuthForm(onSubmit?: (data: AuthFormData) => void) {
   const [values, setValues] = useState<AuthFormData>({
