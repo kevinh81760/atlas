@@ -7,40 +7,88 @@ import { SignInForm } from './SignInForm';
 import { SignUpForm } from './SignUpForm';
 import { useAuthTabs } from '@/lib/auth/useAuthTabs';
 import { AuthFormData, SignUpFormData } from '@/lib/auth/types';
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '@/lib/supabase/client';
 import { useRouter } from "next/navigation";
+import { upsertProfile } from '@/lib/supabase/upsertProfile';
 
 export function AuthContainer() {
   const { activeTab, setActiveTab } = useAuthTabs('signin');
   const router = useRouter();
 
-  const handleFormSubmit = async (
-    data: AuthFormData | SignUpFormData
-  ) => {  
-    const { data: signUpData, error: signUpError } =
-      await supabase.auth.signUp({
+  const handleFormSubmit = async (data: AuthFormData | SignUpFormData) => {
+    if (activeTab === "signin") {
+      const { data: signInData, error: signInError } = await supabase.auth.signInWithPassword({
         email: data.email,
         password: data.password,
       });
-  
-    if (signUpError) {
-      console.error(signUpError.message);
-      return;
+
+      if (signInError) {
+        console.error(signInError.message);
+        return;
+      }
+
+      if (signInData.session) {
+        router.push("/dashboard");
+      }
+    } else if (activeTab === "signup") {
+      const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
+        email: data.email,
+        password: data.password,
+        // Optional: store full name in auth metadata too
+        options: {
+          data: {
+            full_name: "fullName" in data ? data.fullName : undefined,
+          },
+        },
+      });
+    
+      if (signUpError) {
+        console.error(signUpError.message);
+        return;
+      }
+    
+      const user = signUpData.user;
+      const session = signUpData.session;
+    
+      // If you require email confirmation, session may be null here
+      if (!user) {
+        console.error("No user returned from signup.");
+        return;
+      }
+    
+      // Only write to profiles if the user is actually authenticated (session exists)
+      if (session) {
+        try {
+          await upsertProfile(supabase, {
+            id: user.id,
+            full_name: "fullName" in data ? data.fullName : undefined,
+            avatar_url: null,
+          });
+    
+          router.push("/dashboard");
+        } catch (e) {
+          console.error("Profile upsert failed:", e);
+          // Optional: show toast + still route, or stop
+        }
+      } else {
+        // Typical flow when email confirmation is ON
+        router.push("/");
+      }
     }
-  
-    console.log("Signup success:", signUpData);
-    router.push('/dashboard');
   };
-  
 
   const handleGoogleAuth = () => {
     console.log('Google auth clicked');
     // TODO: Add OAuth flow when backend is ready
   };
 
+
+
+
+  
   return (
     <div className="flex h-full w-full items-center justify-center">
-      <div className="flex w-[750px] flex-col gap-[32px] rounded-[12px] border border-[var(--border-primary)] bg-[var(--bg-secondary)] px-[80px] py-[60px]">
+      <div className="flex w-[750px] flex-col gap-[32px] rounded-[12px] border border-[var(--border-primary)] bg-(--bg-secondary) px-[80px] py-[60px]">
         {/* Header */}
         <div className="flex w-full flex-col items-center gap-[12px]">
           <h1 className="font-outfit text-[48px] font-bold leading-none text-[var(--text-primary)]">

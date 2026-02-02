@@ -1,7 +1,6 @@
 'use client';
 
-import { AuthTab } from './types';
-import { Button } from '@/components/ui/Button';
+import { AuthTab } from '@/lib/auth/types';
 
 interface AuthTabsProps {
   activeTab: AuthTab;
