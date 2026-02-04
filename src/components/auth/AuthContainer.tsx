@@ -27,6 +27,10 @@ export function AuthContainer() {
         return;
       }
 
+      console.log("signin success");
+      console.log(signInData);
+
+
       if (signInData.session) {
         router.push("/dashboard");
       }
