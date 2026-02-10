@@ -81,9 +81,23 @@ export function AuthContainer() {
     }
   };
 
-  const handleGoogleAuth = () => {
-    console.log('Google auth clicked');
-    // TODO: Add OAuth flow when backend is ready
+  const handleGoogleAuth = async () => {
+    try {
+      console.log('Google auth clicked');
+      const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: `${window.location.origin}/auth/callback`,
+        },
+      });
+      
+      if (error) throw error;
+  
+      // Usually Supabase redirects automatically, but in some environments you can do:
+      if (data?.url) window.location.href = data.url;
+    } catch (e) {
+      console.error("Google auth failed:", e);
+    }
   };
 
 
