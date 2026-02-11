@@ -29,7 +29,7 @@ export function SignUpForm({ onSubmit }: SignUpFormProps) {
           icon={<User className="h-[20px] w-[20px]" />}
         />
         {errors.fullName && (
-          <span className="font-inter text-[12px] text-red-500">{errors.fullName}</span>
+          <span className="font-inter text-[12px] text-red-500 text-[var(--text-error)]">{errors.fullName}</span>
         )}
       </div>
 

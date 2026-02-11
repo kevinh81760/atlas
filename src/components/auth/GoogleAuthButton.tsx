@@ -11,6 +11,7 @@ export function GoogleAuthButton({ onClick }: GoogleAuthButtonProps) {
       <span className="material-symbols-rounded text-[20px] text-[var(--text-primary)]" style={{ fontWeight: 101 }}>
         g_translate
       </span>
+      
       <span className="font-inter text-[16px] font-medium text-[var(--text-primary)]">
         Continue with Google
       </span>
