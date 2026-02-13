@@ -13,7 +13,7 @@ interface SignUpFormProps {
 
 export function SignUpForm({ onSubmit }: SignUpFormProps) {
   const { values, errors, handleChange, handleSubmit } = useSignUpForm(onSubmit);
-
+  // TODO: Add validation for the form
   return (
     <form onSubmit={handleSubmit} className="flex w-full flex-col gap-[24px]">
       {/* Full Name Field */}
@@ -28,6 +28,7 @@ export function SignUpForm({ onSubmit }: SignUpFormProps) {
           onChange={handleChange}
           icon={<User className="h-[20px] w-[20px]" />}
         />
+      
         {errors.fullName && (
           <span className="font-inter text-[12px] text-red-500 text-[var(--text-error)]">{errors.fullName}</span>
         )}
