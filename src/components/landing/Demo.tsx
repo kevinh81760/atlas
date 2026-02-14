@@ -11,7 +11,6 @@ const beforeNotes = [
 
 const afterSections = [
   {
-    emoji: '💰',
     title: 'Budget & Finance',
     items: [
       'Increase marketing budget allocation',
@@ -19,17 +18,14 @@ const afterSections = [
     ],
   },
   {
-    emoji: '📅',
     title: 'Timeline & Milestones',
     items: ['Target product launch: April 2026'],
   },
   {
-    emoji: '👥',
     title: 'Team & Hiring',
     items: ['Recruit 2 senior developers (Priority: High)'],
   },
   {
-    emoji: '🎨',
     title: 'Brand & Marketing',
     items: ['Initiate rebranding project with Sarah'],
   },
@@ -74,7 +70,7 @@ export function Demo() {
             {afterSections.map((section) => (
               <div key={section.title} className="flex flex-col gap-2">
                 <h4 className="text-base font-bold text-black">
-                  {section.emoji} {section.title}
+                  {section.title}
                 </h4>
                 {section.items.map((item) => (
                   <p key={item} className="text-[15px] text-[#3F3F46] leading-[1.5]">

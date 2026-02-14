@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --bg-primary: #1A1A1A;
-  --bg-secondary: #2A2A2A;
-  --bg-tertiary: #3A3A3A;
-  --bg-button: #505050;
-  --border-primary: #3A3A3A;
-  --text-primary: #E0E0E0;
-  --text-secondary: #B0B0B0;
-  --text-muted: #9A9A9A;
+  --bg-primary: #FAFAFA;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #F4F4F5;
+  --bg-button: #000000;
+  --border-primary: #E4E4E7;
+  --text-primary: #000000;
+  --text-secondary: #71717A;
+  --text-muted: #71717A;
+  --text-on-button: #FFFFFF;
+  --text-error: #EF4444;
 }
 
 @layer base {

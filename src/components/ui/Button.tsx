@@ -4,13 +4,13 @@ export function Button({ variant = 'secondary', children, onClick, type = 'butto
   const baseStyles = 'flex items-center justify-center font-inter text-[16px] transition-colors';
   
   const variantStyles = {
-    primary: 'h-[56px] rounded-[8px] bg-[var(--bg-button)] hover:opacity-90 font-semibold text-[var(--text-primary)]',
-    secondary: 'h-[56px] rounded-[8px] border border-[var(--border-primary)] bg-[var(--bg-secondary)] hover:bg-[var(--bg-tertiary)] font-medium text-[var(--text-primary)]',
-    ghost: 'h-[48px] rounded-[8px] bg-[var(--bg-secondary)] font-normal text-[var(--text-muted)]',
+    primary: 'h-[56px] rounded-[8px] bg-black hover:bg-black/90 font-semibold text-white',
+    secondary: 'h-[56px] rounded-[8px] border border-[#E4E4E7] bg-white hover:bg-[#F4F4F5] font-medium text-black',
+    ghost: 'h-[48px] rounded-[8px] bg-white font-normal text-[#71717A]',
   };
 
   const activeStyles = variant === 'ghost' 
-    ? 'bg-[var(--bg-tertiary)] font-medium text-[var(--text-primary)]'
+    ? 'bg-[#F4F4F5] font-medium text-black'
     : '';
 
   const classNames = [baseStyles, variantStyles[variant], activeStyles, className].filter(Boolean).join(' ');

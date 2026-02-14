@@ -39,7 +39,7 @@ export function SignInForm({ onSubmit }: SignInFormProps) {
           <Label htmlFor="password">Password</Label>
           <button
             type="button"
-            className="font-inter text-[14px] font-normal text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
+            className="font-inter text-[14px] font-normal text-[#71717A] hover:text-black transition-colors"
           >
             Forgot password?
           </button>

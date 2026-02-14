@@ -14,14 +14,14 @@ export function AuthTabs({ activeTab, onTabChange }: AuthTabsProps) {
         onClick={() => onTabChange('signin')}
         className={`flex h-[48px] flex-1 items-center justify-center rounded-[8px] ${
           activeTab === 'signin'
-            ? 'bg-[var(--bg-tertiary)]'
-            : 'bg-[var(--bg-secondary)]'
+            ? 'bg-[#F4F4F5]'
+            : 'bg-white'
         }`}
       >
         <span className={`font-inter text-[16px] ${
           activeTab === 'signin'
-            ? 'font-medium text-[var(--text-primary)]'
-            : 'font-normal text-[var(--text-muted)]'
+            ? 'font-medium text-black'
+            : 'font-normal text-[#71717A]'
         }`}>
           Sign In
         </span>
@@ -30,14 +30,14 @@ export function AuthTabs({ activeTab, onTabChange }: AuthTabsProps) {
         onClick={() => onTabChange('signup')}
         className={`flex h-[48px] flex-1 items-center justify-center rounded-[8px] ${
           activeTab === 'signup'
-            ? 'bg-[var(--bg-tertiary)]'
-            : 'bg-[var(--bg-secondary)]'
+            ? 'bg-[#F4F4F5]'
+            : 'bg-white'
         }`}
       >
         <span className={`font-inter text-[16px] ${
           activeTab === 'signup'
-            ? 'font-medium text-[var(--text-primary)]'
-            : 'font-normal text-[var(--text-muted)]'
+            ? 'font-medium text-black'
+            : 'font-normal text-[#71717A]'
         }`}>
           Sign Up
         </span>

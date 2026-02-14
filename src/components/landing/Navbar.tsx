@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Navbar() {
   return (
-    <header className="flex items-center justify-between px-20 h-[85px] bg-white w-full">
+    <header className="flex items-center justify-between px-20 h-[85px] bg-white w-full border-b border-[#E4E4E7]">
       <div className="flex items-center gap-3">
         <div className="w-8 h-8 rounded-lg bg-black" />
         <span className="font-bold text-xl text-black">Atlas</span>

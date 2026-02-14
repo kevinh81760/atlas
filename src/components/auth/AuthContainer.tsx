@@ -105,14 +105,14 @@ export function AuthContainer() {
 
   
   return (
-    <div className="flex min-h-screen w-full items-center justify-center p-4">
-      <div className="flex max-h-[calc(100vh-2rem)] w-full max-w-[600px] flex-col gap-[24px] overflow-y-auto rounded-[12px] border border-[var(--border-primary)] bg-(--bg-secondary) px-[32px] py-[40px]">
+    <div className="flex min-h-screen w-full items-center justify-center p-4 bg-[#FAFAFA]">
+      <div className="flex max-h-[calc(100vh-2rem)] w-full max-w-[600px] flex-col gap-[24px] overflow-y-auto rounded-[12px] border border-[#E4E4E7] bg-white px-[32px] py-[40px]">
         {/* Header */}
         <div className="flex w-full flex-col items-center gap-[8px]">
-          <h1 className="font-outfit text-[32px] font-bold leading-none text-[var(--text-primary)]">
+          <h1 className="font-outfit text-[32px] font-bold leading-none text-black">
             Welcome!
           </h1>
-          <p className="font-inter text-[14px] font-normal text-[var(--text-secondary)]">
+          <p className="font-inter text-[14px] font-normal text-[#71717A]">
             Sign in or create an account to get started
           </p>
         </div>

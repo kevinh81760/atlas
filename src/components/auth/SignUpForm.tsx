@@ -30,7 +30,7 @@ export function SignUpForm({ onSubmit }: SignUpFormProps) {
         />
       
         {errors.fullName && (
-          <span className="font-inter text-[12px] text-red-500 text-[var(--text-error)]">{errors.fullName}</span>
+          <span className="font-inter text-[12px] text-red-500">{errors.fullName}</span>
         )}
       </div>
 
@@ -62,7 +62,7 @@ export function SignUpForm({ onSubmit }: SignUpFormProps) {
           onChange={handleChange}
           icon={<Lock className="h-[20px] w-[20px]" />}
         />
-        <span className="font-inter text-[12px] text-[var(--text-muted)]">
+        <span className="font-inter text-[12px] text-[#71717A]">
           Must be at least 6 characters
         </span>
         {errors.password && (

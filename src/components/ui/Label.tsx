@@ -4,7 +4,7 @@ export function Label({ htmlFor, children, className }: LabelProps) {
   return (
     <label
       htmlFor={htmlFor}
-      className={`font-inter text-[14px] font-normal text-[var(--text-primary)] ${className || ''}`}
+      className={`font-inter text-[14px] font-normal text-black ${className || ''}`}
     >
       {children}
     </label>

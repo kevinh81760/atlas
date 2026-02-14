@@ -4,7 +4,7 @@ import { AuthContainer } from '@/components/auth/AuthContainer';
 
 export default function LoginPage() {
   return (
-    <main className="min-h-screen w-full">
+    <main className="min-h-screen w-full bg-[#FAFAFA]">
       <AuthContainer />
     </main>
   );
