@@ -29,3 +29,8 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
 }
+
+/* Hide scrollbar for feature scroll */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

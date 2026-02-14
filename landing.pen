@@ -1,0 +1,1338 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "JdZVV",
+      "x": 570,
+      "y": 146,
+      "name": "Atlas Landing Page",
+      "width": 1440,
+      "fill": "#FAFAFA",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "h8QLw",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 85,
+          "fill": "#FFFFFF",
+          "padding": [
+            20,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "OeEDM",
+              "name": "headerLeft",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zkpef",
+                  "name": "logo",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#000000",
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "YRyHd",
+                  "name": "logoText",
+                  "fill": "#000000",
+                  "content": "Atlas",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "U5TUR",
+              "name": "headerRight",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sKwNv",
+                  "name": "loginLink",
+                  "fill": "#71717A",
+                  "content": "Log in",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "0Qr28",
+                  "name": "ctaButton",
+                  "fill": "#000000",
+                  "cornerRadius": 8,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cjzbN",
+                      "name": "ctaText",
+                      "fill": "#FFFFFF",
+                      "content": "Get Atlas Free",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TsFys",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": 498,
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            120,
+            80,
+            80,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "PrCon",
+              "name": "heroContent",
+              "width": 900,
+              "layout": "vertical",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0CG0d",
+                  "name": "headline",
+                  "fill": "#000000",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "Your wiki, docs, &\nprojects. Together.",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 72,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "auReY",
+                  "name": "subheadline",
+                  "fill": "#71717A",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Atlas is the connected workspace where better,\nfaster work happens.",
+                  "lineHeight": 1.4,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "1d7sg",
+                  "name": "heroCtas",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "I4LYW",
+                      "name": "primaryCta",
+                      "fill": "#000000",
+                      "cornerRadius": 8,
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "p0GHM",
+                          "name": "primaryCtaText",
+                          "fill": "#FFFFFF",
+                          "content": "Get Started  →",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pZx03",
+                      "name": "secondaryCta",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 2,
+                        "fill": "#000000"
+                      },
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jittL",
+                          "name": "secondaryCtaText",
+                          "fill": "#000000",
+                          "content": "View Demo",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p7fNC",
+          "name": "Live Demo Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 60,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "IbB6C",
+              "name": "demoHeader",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DD3f9",
+                  "name": "demoTitle",
+                  "fill": "#000000",
+                  "content": "AI-Powered Note Enhancement",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "uLLkh",
+                  "name": "demoSubtitle",
+                  "fill": "#71717A",
+                  "content": "Watch how Atlas transforms your rough notes into organized, actionable content",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jtlT2",
+              "name": "demoContainer",
+              "width": "fill_container",
+              "gap": 40,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SPJmm",
+                  "name": "beforeCard",
+                  "width": 540,
+                  "height": 600,
+                  "fill": "#FAFAFA",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#E4E4E7"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "15foR",
+                      "name": "beforeHeader",
+                      "width": "fill_container",
+                      "fill": "#F4F4F5",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        24,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hW5Zv",
+                          "name": "beforeLabel",
+                          "fill": "#71717A",
+                          "content": "Your notes + transcript",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2idKS",
+                          "name": "beforeTitle",
+                          "fill": "#000000",
+                          "content": "Meeting Notes - Q1 Planning",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2Yg1p",
+                      "name": "beforeContent",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FzSQx",
+                          "name": "note1",
+                          "fill": "#000000",
+                          "textGrowth": "fixed-width",
+                          "width": 476,
+                          "content": "- discussed budget need more $$ for marketing",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "crLWQ",
+                          "name": "note2",
+                          "fill": "#000000",
+                          "textGrowth": "fixed-width",
+                          "width": 476,
+                          "content": "- john mentioned product launch maybe april??",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Yv5gE",
+                          "name": "note3",
+                          "fill": "#000000",
+                          "textGrowth": "fixed-width",
+                          "width": 476,
+                          "content": "- hire 2 developers asap",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "1jkWn",
+                          "name": "note4",
+                          "fill": "#000000",
+                          "textGrowth": "fixed-width",
+                          "width": 476,
+                          "content": "- sarah wants to rebrand dont forget",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "watzu",
+                          "name": "note5",
+                          "fill": "#000000",
+                          "textGrowth": "fixed-width",
+                          "width": 476,
+                          "content": "- q1 goals revenue targets",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tNTmv",
+                          "name": "note6",
+                          "fill": "#000000",
+                          "textGrowth": "fixed-width",
+                          "width": 476,
+                          "content": "- check competitor pricing",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vJiCo",
+                  "name": "afterCard",
+                  "width": 540,
+                  "height": 600,
+                  "fill": "#FAFAFA",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#E4E4E7"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aPsrk",
+                      "name": "afterHeader",
+                      "width": "fill_container",
+                      "fill": "#f4f4f5",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        24,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "1KAO8",
+                          "name": "afterLabel",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "Jzowa",
+                              "name": "aiIcon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "sparkles",
+                              "iconFontFamily": "lucide",
+                              "fill": "#6366F1"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ARPL1",
+                              "name": "afterLabelText",
+                              "fill": "#6366F1",
+                              "content": "AI Enhancement",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "otWK0",
+                          "name": "afterTitle",
+                          "fill": "#000000",
+                          "content": "Q1 Planning Meeting Summary",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XkRfH",
+                      "name": "afterContent",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 24,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "b8gwq",
+                          "name": "section1",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "WsRQQ",
+                              "name": "section1Title",
+                              "fill": "#000000",
+                              "content": "💰 Budget & Finance",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "gDbbp",
+                              "name": "section1Item",
+                              "fill": "#3F3F46",
+                              "textGrowth": "fixed-width",
+                              "width": 476,
+                              "content": "• Increase marketing budget allocation",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "TpdVP",
+                              "name": "section1Item2",
+                              "fill": "#3F3F46",
+                              "textGrowth": "fixed-width",
+                              "width": 476,
+                              "content": "• Review competitor pricing strategy",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "PXhqa",
+                          "name": "section2",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "S2jcO",
+                              "name": "section2Title",
+                              "fill": "#000000",
+                              "content": "📅 Timeline & Milestones",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "EmMlk",
+                              "name": "section2Item",
+                              "fill": "#3F3F46",
+                              "textGrowth": "fixed-width",
+                              "width": 476,
+                              "content": "• Target product launch: April 2026",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0A0OE",
+                          "name": "section3",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "o4O9u",
+                              "name": "section3Title",
+                              "fill": "#000000",
+                              "content": "👥 Team & Hiring",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "sYhEs",
+                              "name": "section3Item",
+                              "fill": "#3F3F46",
+                              "textGrowth": "fixed-width",
+                              "width": 476,
+                              "content": "• Recruit 2 senior developers (Priority: High)",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YHmS4",
+                          "name": "section4",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "brdxS",
+                              "name": "section4Title",
+                              "fill": "#000000",
+                              "content": "🎨 Brand & Marketing",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "dGVCF",
+                              "name": "section4Item",
+                              "fill": "#3F3F46",
+                              "textGrowth": "fixed-width",
+                              "width": 476,
+                              "content": "• Initiate rebranding project with Sarah",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fSX0o",
+          "name": "Scroll Section",
+          "width": "fill_container",
+          "fill": "#F4F4F5",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "mboUe",
+              "name": "featuresHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tPXgu",
+                  "name": "featuresTitle",
+                  "fill": "#000000",
+                  "content": "Everything you need to work together",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "gPyZL",
+                  "name": "featuresSubtitle",
+                  "fill": "#71717A",
+                  "content": "Powerful tools to help your team collaborate seamlessly",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cnME8",
+              "name": "scrollContainer",
+              "width": 1443,
+              "gap": 24,
+              "padding": [
+                0,
+                80
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "owuUP",
+                  "name": "card1",
+                  "width": 340,
+                  "height": 280,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Kz8Tu",
+                      "name": "icon1Frame",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#C4B5FD",
+                      "cornerRadius": 32,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "wV0Ju",
+                          "name": "icon1",
+                          "width": 32,
+                          "height": 32,
+                          "iconFontName": "check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "zXe2e",
+                      "name": "card1Title",
+                      "fill": "#000000",
+                      "content": "Tasks",
+                      "fontFamily": "Inter",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "844e4",
+                      "name": "card1Desc",
+                      "fill": "#71717A",
+                      "textGrowth": "fixed-width",
+                      "width": 260,
+                      "content": "Stay on top of your to-dos and keep things moving",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KY1uw",
+                  "name": "card2",
+                  "width": 340,
+                  "height": 280,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "8EqiC",
+                      "name": "icon2Frame",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#FDBA74",
+                      "cornerRadius": 32,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "nJOB2",
+                          "name": "icon2",
+                          "width": 32,
+                          "height": 32,
+                          "iconFontName": "calendar",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "MaWDp",
+                      "name": "card2Title",
+                      "fill": "#000000",
+                      "content": "Calendar",
+                      "fontFamily": "Inter",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "M2MDN",
+                      "name": "card2Desc",
+                      "fill": "#71717A",
+                      "textGrowth": "fixed-width",
+                      "width": 260,
+                      "content": "Link events to notes for a seamless workflow",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Y9qP4",
+                  "name": "card3",
+                  "width": 340,
+                  "height": 280,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "StBkI",
+                      "name": "icon3Frame",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#93C5FD",
+                      "cornerRadius": 32,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "rzgD5",
+                          "name": "icon3",
+                          "width": 32,
+                          "height": 32,
+                          "iconFontName": "scissors",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "wwIFR",
+                      "name": "card3Title",
+                      "fill": "#000000",
+                      "content": "Web Clipper",
+                      "fontFamily": "Inter",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mCoZv",
+                      "name": "card3Desc",
+                      "fill": "#71717A",
+                      "textGrowth": "fixed-width",
+                      "width": 260,
+                      "content": "Clip what you see online with a click",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0whLD",
+                  "name": "card4",
+                  "width": 267,
+                  "height": 280,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vlToQ",
+                      "name": "icon4Frame",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#F9A8D4",
+                      "cornerRadius": 32,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "ekJ5d",
+                          "name": "icon4",
+                          "width": 32,
+                          "height": 32,
+                          "iconFontName": "users",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "1Bgyb",
+                      "name": "card4Title",
+                      "fill": "#000000",
+                      "content": "Collaborate",
+                      "fontFamily": "Inter",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FZxeC",
+                      "name": "card4Desc",
+                      "fill": "#71717A",
+                      "textGrowth": "fixed-width",
+                      "width": 260,
+                      "content": "Work together as a team in real time",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RBUXX",
+              "name": "navButtons",
+              "width": "fill_container",
+              "gap": 16,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RirI1",
+                  "name": "leftButton",
+                  "width": 48,
+                  "height": 48,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#E4E4E7"
+                  },
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "8cQee",
+                      "name": "leftIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "arrow-left",
+                      "iconFontFamily": "lucide",
+                      "fill": "#000000"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "G2C15",
+                  "name": "rightButton",
+                  "width": 48,
+                  "height": 48,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#E4E4E7"
+                  },
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "TFrxQ",
+                      "name": "rightIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "arrow-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#000000"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "5m1co",
+          "name": "CTA Section",
+          "rotation": -0.006559954024424544,
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            120,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "uoffk",
+              "name": "ctaTitle",
+              "fill": "#000000",
+              "content": "Ready to organize your life?",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 64,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "h7Cdb",
+              "name": "ctaSubtitle",
+              "fill": "#71717A",
+              "content": "Join thousands of people who use Atlas to get things done.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "l0SLV",
+              "name": "ctaButton2",
+              "fill": "#000000",
+              "cornerRadius": 48,
+              "padding": [
+                20,
+                48
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qxo3p",
+                  "name": "ctaButton2Text",
+                  "fill": "#FFFFFF",
+                  "content": "Get Started for Free",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cU1XY",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#FAFAFA",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            60,
+            80,
+            40,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "1h3wy",
+              "name": "footerTop",
+              "width": "fill_container",
+              "gap": 80,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6VhBv",
+                  "name": "footerBrand",
+                  "width": 300,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FhmmG",
+                      "name": "footerLogo",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "CD4t7",
+                          "name": "footerLogoIcon",
+                          "width": 28,
+                          "height": 28,
+                          "fill": "#000000",
+                          "cornerRadius": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "EQViV",
+                          "name": "footerLogoText",
+                          "fill": "#000000",
+                          "content": "Atlas",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "uzGcT",
+                      "name": "footerTagline",
+                      "fill": "#71717A",
+                      "textGrowth": "fixed-width",
+                      "width": 280,
+                      "content": "The connected workspace for modern teams",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Zc4eC",
+                  "name": "footerLinks",
+                  "gap": 60,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "CYOtD",
+                      "name": "footerCol1",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PX9Vh",
+                          "name": "footerCol1Title",
+                          "fill": "#000000",
+                          "content": "Product",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fUbDe",
+                          "name": "footerCol1Link1",
+                          "fill": "#71717A",
+                          "content": "Features",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "iOUdI",
+                          "name": "footerCol1Link2",
+                          "fill": "#71717A",
+                          "content": "Pricing",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sY7KS",
+                          "name": "footerCol1Link3",
+                          "fill": "#71717A",
+                          "content": "Security",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mpezZ",
+                      "name": "footerCol2",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "6L5C8",
+                          "name": "footerCol2Title",
+                          "fill": "#000000",
+                          "content": "Company",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "j4GpC",
+                          "name": "footerCol2Link1",
+                          "fill": "#71717A",
+                          "content": "About",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9Ka6Q",
+                          "name": "footerCol2Link2",
+                          "fill": "#71717A",
+                          "content": "Blog",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MWUYT",
+                          "name": "footerCol2Link3",
+                          "fill": "#71717A",
+                          "content": "Careers",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "m5u5M",
+                      "name": "footerCol3",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o3fVD",
+                          "name": "footerCol3Title",
+                          "fill": "#000000",
+                          "content": "Resources",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "7K4uz",
+                          "name": "footerCol3Link1",
+                          "fill": "#71717A",
+                          "content": "Documentation",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "rryce",
+                          "name": "footerCol3Link2",
+                          "fill": "#71717A",
+                          "content": "Help Center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "M3ECx",
+                          "name": "footerCol3Link3",
+                          "fill": "#71717A",
+                          "content": "Community",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "euirc",
+              "name": "footerBottom",
+              "width": "fill_container",
+              "stroke": {
+                "thickness": 0,
+                "fill": "#E4E4E7"
+              },
+              "padding": [
+                24,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mfqh0",
+                  "name": "copyright",
+                  "fill": "#A1A1AA",
+                  "content": "© 2026 Atlas. All rights reserved.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

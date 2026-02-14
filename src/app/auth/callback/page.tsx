@@ -12,7 +12,7 @@ export default function AuthCallbackPage() {
     const run = async () => {
       const { data } = await supabase.auth.getSession();
       if (data.session) router.replace("/dashboard");
-      else router.replace("/"); // fallback
+      else router.replace("/login"); // fallback
     };
     run();
   }, [router]);
