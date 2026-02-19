@@ -92,7 +92,7 @@ export function AuthContainer() {
       });
       
       if (error) throw error;
-  
+      // test
       // Usually Supabase redirects automatically, but in some environments you can do:
       if (data?.url) window.location.href = data.url;
     } catch (e) {
@@ -116,7 +116,7 @@ export function AuthContainer() {
             Sign in or create an account to get started
           </p>
         </div>
-
+      
         {/* Google Button */}
         <GoogleAuthButton onClick={handleGoogleAuth} />
 
