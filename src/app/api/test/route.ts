@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase/client';
 
 export async function GET() {
+    // Get all users from the database
     const { data, error } = await supabase.from('users').select('*');
     if (error) {
         return NextResponse.json({ error: error.message }, { status: 500 });
